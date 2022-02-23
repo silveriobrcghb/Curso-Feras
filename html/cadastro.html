@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <h1>Cadastro de Cliente</h1>
+
+    <form action="cadastro.html" method="post" enctype="multipart/form-data">
+
+        <label>Código</label>
+        <input type="number" name="codigo"><br>
+
+        <p>
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="digite o nome"><br>
+        </p>    
+
+        <p>
+            <label>Nascimento</label>
+            <input type="date" name="nascimento"><br>
+        </p>
+
+        <p>
+            <label>Time
+                <input type="text" name="time" list="list_time" />
+                <datalist id="list_time">
+                    <option value="Santos" />
+                    <option value="Palmeiras" />
+                    <option value="Corintians" />
+                    <option value="São Paulo" />
+                    <option value="Grêmio" />
+                </datalist>
+            </label>
+        </p>
+
+        <hr>
+
+        <p>Sexo
+            <br>
+            <select name="sexo">
+                <option value="">selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+        </p>
+
+        <p>Selecione o favorito
+            <br>
+            <input type="radio" name="genero" value="rock" />Rock
+            <input type="radio" name="genero" value="pop" />Pop
+            <input type="radio" name="genero" value="jazz" />Jazz
+        </p>
+        <label>Estilo musical
+            <br>
+            <input type="radio" name="genero" value="rock" />Rock
+            <input type="radio" name="genero" value="pop" />Pop
+            <input type="radio" name="genero" value="jazz" />Jazz
+        </label>
+
+        <p>
+            <label>Intervalo
+                <input type="range" name="intervalo" min="0" max="100" step="10">
+            </label>
+        </p>        
+
+        <p>Selecione estilo musical
+            <br>
+            <input type="checkbox" name="service" value="itunes" />itunes
+            <input type="checkbox" name="service" value="lastfm" />Last.fm
+            <input type="checkbox" name="service" value="spotify" />Spotify
+        </p>
+
+        <hr>
+
+        <p>Observações
+            <br>
+            <textarea name="informacaoes"cols="30" rows="10" placeholder="digite"></textarea>
+        </p>
+
+        <hr>
+
+        <p>
+            <input type="file" name="arquivo">
+        </p>
+
+        <br>       
+
+        <p>
+            <input type="button" value="Botão Principal">
+        </p>
+        <p>
+            <input type="submit" value="Enviar cadastro">
+        </p>       
+
+    </form>    
+    
+</body>
+</html>
