@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Basic</title>
+</head>
+<body>
+    <h1>Formulário Básicos</h1>
+    <form action="formsbasic.html" method="post" enctype="multipart/form-data">
+        <label>Nome</label><br>
+        <input type="text" name="nome" /><br>
+        
+        <label>Senha</label><br>
+        <input type="password" name="password" />
+
+        <hr>
+        
+        <label>Sexo</label><br>
+        <input type="radio" name="sexo" checked>Masculino
+        <input type="radio" name="sexo">Feminino
+
+        <hr>
+
+        <label>Filmes</label><br>
+        <input type="checkbox" name="filmes" checked>Ação <br>
+        <input type="checkbox" name="filmes">Comédia <br>
+        <input type="checkbox" name="filmes">Romance <br>
+        <input type="checkbox" name="filmes">Terror <br>
+        <input type="checkbox" name="filmes">Outros <br>
+
+        <hr>
+
+        <label>Descrição</label> <br>
+        <textarea name="descricao" cols="50" rows="10"></textarea>
+
+        <hr>
+
+        <label>Arquivo</label> <br>
+        <input type="file" name="arquivo">
+    </form>
+</body>
+</html>
