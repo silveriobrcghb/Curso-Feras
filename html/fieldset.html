@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+</head>
+<body>
+
+    <form action="fieldset.html" method="post">
+        <fieldset>
+            <legend>Detalhes do Contato</legend>
+            <p>
+                <label for="email">E-mail
+                    <br>
+                    <input type="email" name="email" placeholder="digite o e-mail" />
+                </label>
+            </p>           
+
+            <p>
+                <label for="telefone">Telefone
+                    <br>
+                    <input type="tel" name="telefone" placeholder="digite o telefone" />
+                </label>
+            </p>
+
+            <p>
+                <label for="senha">Senha
+                    <br>
+                    <input type="password" name="senha" placeholder="digite a senha" />
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>            
+            
+        </fieldset>
+    </form>
+
+    <form action="/Atividade01/htmls/fieldset.html" method="post">
+        <p>
+            <label for="pesquisar"> Pesquisar
+                <br>
+                <input type="search" name="pesquisar" />                    
+            </label>
+        </p>
+    </form>
+
+    <p>
+        <label for="cor">Cor
+            <br>
+            <input type="color" name="cor" />
+        </label>
+    </p>
+
+    <p>
+        <label for="nascimento">Nascimento
+            <br>
+            <input type="date" name="nascimento" />
+        </label>
+        <br>
+        <label for="nascimento">Nascimento
+            <br>
+            <input type="datetime-local" name="nascimento" />
+        </label>
+        <br>
+        <label for="intervalo">Intervalo
+            <br>
+            <input type="range" name="intervalo" min="0" max="100" value="5" step="5" />
+        </label>
+    </p>
+        
+</body>
+</html>
