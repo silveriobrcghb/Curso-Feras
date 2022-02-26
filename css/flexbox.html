@@ -10,6 +10,7 @@
         #linha1, #linha2, #linha3, #linha4, #linha5{
             display: flex;
             flex-direction: row;
+            height: 300px;
         }
         #linha1{            
             background-color: aqua;
@@ -35,6 +36,17 @@
             background-color: aquamarine;
             width: 25%;
             padding: 1%;
+            height: 200px;
+            align-self: center;
+        }
+        #linha2 > div{
+            align-self: flex-start;
+        }
+        #linha3 > div{
+            align-self: flex-end;
+        }
+        #noticia2{
+            flex-grow: 2;
         }
     </style>
 
@@ -46,7 +58,7 @@
             <h3>Título 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt ea optio aut aliquid eveniet ab necessitatibus omnis, eos molestiae quibusdam quidem debitis, eius maxime ad quas beatae sapiente eaque.</p>
         </div>
-        <div class="noticia">
+        <div id="noticia2" class="noticia">
             <h3>Título 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt ea optio aut aliquid eveniet ab necessitatibus omnis, eos molestiae quibusdam quidem debitis, eius maxime ad quas beatae sapiente eaque.</p>
         </div>
