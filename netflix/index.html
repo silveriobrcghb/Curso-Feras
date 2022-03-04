@@ -13,29 +13,54 @@
 
     <style>
         body{
+            margin: 0;
             font-family: 'Balsamiq Sans', cursive;
-            margin: 0px;
         }
-        #sessao-top{
-            min-width: 500px;
-            max-width: max-content;
-            min-height: 400px;
-            max-height: 900px;
-            background-image: url("assets/img/fundo_top.jpg");
-
-            
+        .topo{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            margin-left: 5%;
+        }
+        #esquerda{
+            background-color: aqua;
+            width: 25%;
+            display: inline-block;
+        }
+        #direita{
+            background-color: aquamarine;
+            width: 75%;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+        }
+        #logo{
+            max-width: 145px;
+        }
+        .chamada{
+            text-align: center;
         }
     </style>
 
 </head>
 <body>
-
-    <section id="sessao-top">
-        <div id="top">
-            <img src="assets/img/logo.png" alt="Logo">
+    <section id="principal">
+        <div class="topo">
+            <div id="esquerda">
+                <img id="logo" src="assets/img/logo.png" alt="logo">
+            </div>
+            <div id="direita">
+                <select name="idioma" id="idioma">
+                    <option value="Português">Português</option>
+                    <option value="Inglês">Inglês</option>
+                </select>
+                <button>Entrar</button>
+            </div>
         </div>
-        
-    </section>
-    
+        <div class="chamada">
+            <h2>Filmes, séries e muito mais. Sem limites.</h2>
+            <h5>Assista onde quiser. Cancele quando quiser.</h5>
+        </div>
+    </section>    
 </body>
 </html>
