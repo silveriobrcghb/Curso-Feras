@@ -14,38 +14,97 @@
     <style>
         body{
             margin: 0;
-            font-family: 'Balsamiq Sans', cursive;
+            font-family: 'Netflix Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: white;
+            background-image: url(assets/img/fundo_top.jpg);
+            background-repeat: no-repeat;
         }
-        .topo{
+        #principal{
+            padding-top: 20px;            
+            background-color: rgba(0, 0, 0, 0.4);
+            background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+            height: 690px;
+        }
+        #topo{
             display: flex;
             flex-direction: row;
             height: 60px;
             margin-left: 5%;
+            margin-right: 5%;
         }
         #esquerda{
-            background-color: aqua;
             width: 25%;
             display: inline-block;
         }
         #direita{
-            background-color: aquamarine;
             width: 75%;
             display: inline-block;
             text-align: right;
             margin-right: 10px;
         }
         #logo{
-            max-width: 145px;
+            max-width: 120px;
         }
-        .chamada{
+        #chamada{
             text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        #chamada > h2{
+            font-size: 50px;
+        }
+        #chamada > h4{
+            font-size: 26px;
+            font-weight: normal;
+        }
+        #cadastro{
+            font-size: 25px;
+            font-weight: normal;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        #email{
+            width: 500px;
+            height: 48px;
+            border: 0px;
+            padding-left: 25px;
+            font-size: 18px;
+        }
+        #submit_cadastro{
+            background-color: rgb(229, 9, 20);
+            border: 0px;
+            height: 51px;
+            width: 130px;
+            color: #FFF;
+            font-size: 20px;
+            margin-left: -6px;
+        }
+
+        
+        @media screen and (max-width: 600px){
+            #chamada{
+                width: 90%;                
+            }
+            #chamada > h2{
+                font-size: 28px;
+            }
+            #chamada > h4{
+                font-size: 18px;
+            }
+            #cadastro{                
+                width: 90%;
+            }
+            #submit_cadastro{
+                margin-left: 0px;
+            }
         }
     </style>
 
 </head>
 <body>
     <section id="principal">
-        <div class="topo">
+        <div id="topo">
             <div id="esquerda">
                 <img id="logo" src="assets/img/logo.png" alt="logo">
             </div>
@@ -57,10 +116,15 @@
                 <button>Entrar</button>
             </div>
         </div>
-        <div class="chamada">
+        <div id="chamada">
             <h2>Filmes, séries e muito mais. Sem limites.</h2>
-            <h5>Assista onde quiser. Cancele quando quiser.</h5>
+            <h4>Assista onde quiser. Cancele quando quiser.</h4>
         </div>
+        <form id="cadastro" action="">
+            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <input id="email" type="email" name="email" placeholder="Email">
+            <input id="submit_cadastro" type="submit" value="Vamos lá >">
+        </form>
     </section>    
 </body>
 </html>
